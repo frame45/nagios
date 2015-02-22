@@ -1,0 +1,35 @@
+##############################################
+##############################################
+#
+# Linux Host Definitions
+#
+##############################################
+##############################################
+
+define host {
+	use			freenas-jail
+	host_name	plexmediaserver_1
+	alias		Plex
+	address		192.168.1.103
+}
+
+define host {
+	use			freenas-jail
+	host_name	owncloud_1
+	alias		ownCloud
+	address		192.168.1.106
+}
+
+define host {
+	use			freenas-jail
+	host_name	crashplan_1
+	alias		CrashPlan
+	address		192.168.1.101
+}
+
+define host {
+	use			freenas-jail
+	host_name	bit_1
+	alias		Transmission
+	address		192.168.1.104
+}
